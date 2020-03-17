@@ -1,0 +1,25 @@
+<div id="login-body">
+    <h2 id="login-header">{{header}}</h2>
+    
+    {{#if loginError}}
+        <div id="login-error">Error: username or password incorrect.</span>
+    {{/if}}
+
+    <form id="login" action="/login" method="POST">
+        
+        <div class="input-row">
+            <i class="fa fa-user icon"></i>
+            <input class="input-field" id="username" name="username" placeholder="username" type="text"/> 
+        </div>
+
+        <div class="input-row">
+            <i class="fa fa-lock icon"></i>
+            <input class="input-field" id="password" name="pass" placeholder="password" type="password"/>
+        </div>        
+        
+        <br />
+
+        <button class="btn" id="login-btn" type="submit">Login</button>
+    </form>
+
+</div>
